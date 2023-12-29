@@ -5,34 +5,10 @@ public class Customer {
     private String name;
     private String lastname;
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getLastname() {
-        return lastname;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
-
     public Customer() {
     }
 
-    public Customer(Builder builder) {
+    private Customer(Builder builder) {
         this.id=builder.id;
         this.name= builder.name;
         this.lastname= builder.lastname;
